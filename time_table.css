@@ -1,0 +1,32 @@
+#heading{
+	color:blue;
+	width:23cm;
+	text-align:center;
+	font-family:arial,sans-serif;
+}
+
+.day{
+	text-align:center;
+	background-color:pink;
+	
+
+
+}
+#fr{
+	background-color:pink;
+
+}
+.row{
+	text-align:center;
+}
+table{
+	margin:57px;
+	width:20cm;
+	
+	background-color:yellow;	
+	text-align:center;
+	border:2px solid black;
+
+
+
+}
