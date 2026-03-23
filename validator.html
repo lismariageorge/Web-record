@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+<h3>Login Page</h2>
+Username:<input type="text"  id="name"	placeholder="Enter your email"><br></br>
+Password:<input type="text" id="password" ><br></br>
+<input type="button" value="Login" id="login" onclick="duel()"></input>
+<script>
+function password()
+{
+
+	let password=document.getElementById("password").value;
+	if(password.length<=6)
+	{
+        	alert("password must have 6 character");
+	}
+	else
+	{
+		console.log("pass");
+                return "pass";
+	}
+}
+function username()
+{
+	let username=document.getElementById("name").value;
+	let usernamepattern=/\w+@\w+\.\w+/;
+        if(!usernamepattern.test(username))
+        {
+              alert("invalid email");
+   
+        }
+        else
+        {
+		console.log("pass");
+		return "pass";
+        }
+
+}
+function duel()
+{
+	username();
+	password();
+	document.write("login succsseful!");
+}
+</script>
+<body>
+
+</body>
+</html>

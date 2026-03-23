@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+
+<h2 id="para" class="p">calculator</h2>
+Number 1: <input type="number" value="number 1" id="num1"><br>
+<p>Operator:  <input type="text" value="" id="op"><br></p>
+Number 2: <input type="number" value="number 2" id="num2"><br><p></p>
+<input type="button" value="submit" onclick="calculator()"><br>
+
+<p id="answer"></p>
+
+
+<script>
+function calculator()
+{
+
+        let val1=document.getElementById("num1").value;
+
+        let val2=document.getElementById("num2").value;
+        let optr=document.getElementById("op").value;
+        switch(optr)
+        {
+                case "+":
+                        document.getElementById("answer").innerHTML=Number(val1)+Number(val2);
+                        braek;
+                case "-":
+                         document.getElementById("answer").innerHTML=Number(val1)-Number(val2);
+                        break;
+                case "*":
+                         document.getElementById("answer").innerHTML=Number(val1)*Number(val2);
+                        break;
+                case "/":
+                         document.getElementById("answer").innerHTML=Number(val1)/Number(val2);
+                         break;
+        }
+}
+
+</script>
+
+</body>
+</html>
+
+
